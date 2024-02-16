@@ -1,4 +1,5 @@
 import { AboutUs } from "./_components/about-us";
+import { Contact } from "./_components/contact/contatc";
 import { Footer } from "./_components/footer";
 import { Galery } from "./_components/galery";
 import { Header } from "./_components/header";
@@ -13,11 +14,12 @@ export default function Home() {
       <Header />
       <Navbar />
       <div className="flex-1">
-      <Hero />
-      <AboutUs />
-      <Services />
-      <Perks />
-      <Galery />
+        <Hero />
+        <AboutUs />
+        <Services />
+        <Perks />
+        <Galery />
+        <Contact />
       </div>
       <Footer />
     </main>

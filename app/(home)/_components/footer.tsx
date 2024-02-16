@@ -17,7 +17,7 @@ const links = [
 
 export const Footer = () => {
   const matches = useMediaQuery("(max-width: 768px)");
-
+  
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -44,10 +44,10 @@ export const Footer = () => {
               />
             </div>
             <div className="flex gap-2">
-              <a href="https://www.instagram.com">
+              <a href="https://www.instagram.com/jvr_higienizacao">
                 <FaInstagram size={20} />
               </a>
-              <a href="https://wa.me/5511987654321">
+              <a href="https://wa.me/5519993509241">
                 <FaWhatsapp size={20} />
               </a>
               <a href="https://www.facebook.com">
@@ -58,17 +58,17 @@ export const Footer = () => {
           <div className="grid grid-cols-2">
             <div className="flex flex-col gap-2">
               <h1 className="text-base sm:text-xl font-bold">Navague</h1>
-              <ul className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2">
                 {links.map((link) => (
-                  <li
+                  <div
                     className="text-sm hover:cursor-pointer"
                     key={link.name}
-                    onClick={() => scrollToSection(`${link.href}`)}
+                    onClick={() => scrollToSection(link.href)}
                   >
                     {link.name}
-                  </li>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </div>
             <div className="flex flex-col gap-2">
               <h1 className="text-base sm:text-xl font-bold">Contato</h1>
@@ -82,9 +82,9 @@ export const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Phone size={20} />
-                <a href="tel:+551112345678">
+                <a href="tel:+5519993509241">
                   <p className="text-sm hover:cursor-pointer">
-                    +55 11 1234-5678
+                  +55 19 99350-9241
                   </p>
                 </a>
               </div>

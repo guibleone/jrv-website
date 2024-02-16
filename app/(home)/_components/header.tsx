@@ -57,8 +57,8 @@ useEffect(() => {
           <Separator orientation="vertical" />
           <div className="flex items-center gap-2">
             <Phone size={15} />
-            <a href="tel:+551112345678">
-              <p className="text-xs font-medium">+55 11 1234-5678</p>
+            <a href="tel:+5519993509241">
+              <p className="text-xs font-medium">+55 19 99350-9241</p>
             </a>
           </div>
           <Separator orientation="vertical" />
@@ -70,10 +70,10 @@ useEffect(() => {
           </div>
         </div>
         <div className="flex gap-3">
-          <a href="https://wa.me/5511987654321">
+          <a href="https://wa.me/5519993509241">
             <FaWhatsapp size={20} />
           </a>
-          <a href="https://www.instagram.com">
+          <a href="https://www.instagram.com/jvr_higienizacao">
             <FaInstagram size={20} />
           </a>
           <a href="https://www.facebook.com">
