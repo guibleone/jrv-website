@@ -1,7 +1,22 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { useMediaQuery } from "usehooks-ts";
 
 export const Hero = () => {
+  const matches = useMediaQuery("(max-width: 768px)");
+
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const navbarHeight = matches ? 60 : 108;
+      const sectionPosition = section.offsetTop - navbarHeight;
+      window.scrollTo({
+        top: sectionPosition,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <section className="max-w-screen-xl w-full mx-auto py-10 sm:py-20 px-8">
       <div className="flex flex-col md:flex-row items-center gap-10">
@@ -16,8 +31,18 @@ export const Hero = () => {
             </p>
           </div>
           <div className="flex gap-3">
-            <Button variant={"outline"}>Saiba Mais</Button>
-            <Button variant={"default"}>Orçamento</Button>
+            <Button
+              onClick={() => scrollToSection("serviços")}
+              variant={"outline"}
+            >
+              Saiba Mais
+            </Button>
+            <Button
+              onClick={() => scrollToSection("contato")}
+              variant={"default"}
+            >
+              Orçamento
+            </Button>
           </div>
         </div>
         <Image
