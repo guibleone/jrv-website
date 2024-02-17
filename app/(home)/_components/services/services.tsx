@@ -7,21 +7,21 @@ const services = [
     description:
       "Limpeza completa de bancos, vidros e teto, hidratação e revitalização de plásticos, higienização de carpetes e porta-malas, além de uma lavagem externa com pneu pretinho.",
     image: "/limpeza-carro.jpeg",
-    link: "#",
+    link: "contato",
   },
   {
     title: "Impermeabilização",
     description:
       "A impermeabilização aplicao uma camada protetora que atua nas fibras dos tecidos, aumentando sua durabilidade e resistência contra líquidos, reduzindo a acumulação de sujeira.",
     image: "/impermeabilização.jpeg",
-    link: "#",
+    link: "contato",
   },
   {
     title: "Higienização Completa",
     description:
       "A higienização e limpeza de estofados envolve a eliminação de bactérias. Esse processo é realizado utilizando produtos biodegradáveis, seguido pela remoção da sujeira através da extração",
     image: "/higienização.jpeg",
-    link: "#",
+    link: "contato",
   },
 ];
 

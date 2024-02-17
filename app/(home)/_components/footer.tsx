@@ -38,7 +38,7 @@ export const Footer = () => {
             <div className="relative w-[160px] sm:w-[180px] h-14 sm:h-16">
               <Image
                 src={"/logo-branco.png"}
-                alt={"logo jrv"}
+                alt={"logo jvr"}
                 fill
                 className="aspect-video w-full h-full"
               />
@@ -50,12 +50,12 @@ export const Footer = () => {
               <a href="https://wa.me/5519993509241">
                 <FaWhatsapp size={20} />
               </a>
-              <a href="https://www.facebook.com">
+              <a href="https://www.facebook.com/profile.php?id=100089071991486&mibextid=LQQJ4d">
                 <AiOutlineFacebook size={20} />
               </a>
             </div>
           </div>
-          <div className="grid grid-cols-2">
+          <div className="flex gap-5 sm:gap-10">
             <div className="flex flex-col gap-2">
               <h1 className="text-base sm:text-xl font-bold">Navague</h1>
               <div className="flex flex-col gap-2">
@@ -74,11 +74,9 @@ export const Footer = () => {
               <h1 className="text-base sm:text-xl font-bold">Contato</h1>
               <div className="flex items-center gap-2">
                 <MapPin size={20} />
-                <a href="https://www.google.com/maps">
                   <p className="text-sm hover:cursor-pointer">
-                    Rua das Flores, 123 - São Paulo
+                    Campinas e região
                   </p>
-                </a>
               </div>
               <div className="flex items-center gap-2">
                 <Phone size={20} />
@@ -90,8 +88,8 @@ export const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Mail size={20} />
-                <a href="mailto:jrv@gmail.com">
-                  <p className="text-sm hover:cursor-pointer">jrv@gmail.com</p>
+                <a href="mailto:jvrhigienizacoes@gmail.com">
+                  <p className="text-sm hover:cursor-pointer">jvrhigienizacoes@gmail.com</p>
                 </a>
               </div>
             </div>

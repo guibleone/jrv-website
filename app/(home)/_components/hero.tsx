@@ -11,7 +11,7 @@ export const Hero = () => {
               Recupere o Brilho e o Conforto do Seu Sofá
             </h1>
             <p className="text-st-tropaz-400 font-normal text-sm md:text-base">
-              Bem-vindo a JRV, onde a limpeza do seu sofá é mais do que uma
+              Bem-vindo a JVR, onde a limpeza do seu sofá é mais do que uma
               tarefa - é uma arte!
             </p>
           </div>

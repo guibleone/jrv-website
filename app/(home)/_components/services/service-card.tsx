@@ -1,6 +1,8 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import { useMediaQuery } from "usehooks-ts";
 
 interface ServiceCardProps {
   title: string;
@@ -15,6 +17,20 @@ export const ServiceCard = ({
   link,
   title,
 }: ServiceCardProps) => {
+  const matches = useMediaQuery("(max-width: 768px)");
+
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const navbarHeight = matches ? 60 : 108;
+      const sectionPosition = section.offsetTop - navbarHeight;
+      window.scrollTo({
+        top: sectionPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <div className="flex flex-col gap-8">
       <Image
@@ -26,10 +42,12 @@ export const ServiceCard = ({
       />
       <h1 className="text-xl font-semibold text-st-tropaz-700">{title}</h1>
       <p className="text-sm  text-st-tropaz-400">{description}</p>
-      <Button size={'sm'} asChild className="self-end">
-        <Link href={link}>
-          Contratar
-        </Link>
+      <Button
+        size={"sm"}
+        onClick={() => scrollToSection(link)}
+        className="self-end"
+      >
+        Contratar
       </Button>
     </div>
   );

@@ -9,7 +9,7 @@ interface PerkProps {
 export const Perk = ({ description, Icon, title }: PerkProps) => {
   return (
     <div className=" flex flex-col items-center text-center gap-5">
-      <Icon size={40} />
+      <Icon size={35} />
       <h1 className="text-apple-950 text-xl font-bold">{title}</h1>
       <p className="text-apple-700 text-sm">{description}</p>
     </div>

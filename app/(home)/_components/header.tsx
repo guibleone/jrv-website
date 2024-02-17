@@ -48,11 +48,9 @@ useEffect(() => {
         <div className="flex gap-8">
           <div className="flex items-center gap-2">
             <MapPin size={15} />
-            <a href="https://www.google.com/maps">
               <p className="text-xs font-medium">
-                Rua das Flores, 123 - São Paulo
+                Limpeza a domicílio em Campinas e região
               </p>
-            </a>
           </div>
           <Separator orientation="vertical" />
           <div className="flex items-center gap-2">
@@ -64,8 +62,8 @@ useEffect(() => {
           <Separator orientation="vertical" />
           <div className="flex items-center gap-2">
             <Mail size={15} />
-            <a href="mailto:jrv@gmail.com">
-              <p className="text-xs font-medium">jrv@gmail.com</p>
+            <a href="mailto:jvrhigienizacoes@gmail.com">
+              <p className="text-xs font-medium">jvrhigienizacoes@gmail.com</p>
             </a>
           </div>
         </div>
@@ -76,7 +74,7 @@ useEffect(() => {
           <a href="https://www.instagram.com/jvr_higienizacao">
             <FaInstagram size={20} />
           </a>
-          <a href="https://www.facebook.com">
+          <a href="https://www.facebook.com/profile.php?id=100089071991486&mibextid=LQQJ4d">
             <AiOutlineFacebook size={21} />
           </a>
         </div>

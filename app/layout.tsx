@@ -8,8 +8,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "JRV | Limpeza de Estofados",
-  description: "Limpeza de estofados e higienização veicular em Campinas, São Paulo",
+  title: "JVR | Limpeza de Estofados",
+  description: "Limpeza de estofados e higienização em Campinas, São Paulo",
 };
 
 export default function RootLayout({

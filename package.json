@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.1.0",
+    "@radix-ui/react-select": "^2.0.0",
     "@radix-ui/react-separator": "^1.0.3",
     "@radix-ui/react-slot": "^1.0.2",
     "@vis.gl/react-google-maps": "^0.7.0",

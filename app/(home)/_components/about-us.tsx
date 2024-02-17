@@ -10,7 +10,7 @@ export const AboutUs = () => {
             <h1 className="text-xl md:text-2xl font-bold text-st-tropaz-800">Sobre Nós</h1>
             <Separator className=" bg-st-tropaz-950 w-[180px]" />
             <p className="text-st-tropaz-400 text-sm md:text-base font-normal">
-              No coração da JRV, somos mais do que uma equipe de especialistas
+              No coração da JVR, somos mais do que uma equipe de especialistas
               em limpeza de sofás - somos apaixonados por transformar espaços e
               proporcionar conforto aos nossos clientes. Combinando habilidade
               artesanal com tecnologia de ponta, dedicamo-nos a revitalizar

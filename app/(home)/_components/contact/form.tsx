@@ -1,10 +1,17 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+
 import { Textarea } from "@/components/ui/textarea";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
-
 
 export const Form: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -41,20 +48,37 @@ export const Form: React.FC = () => {
 
   return (
     <form ref={formRef} className="flex flex-col gap-5" onSubmit={sendEmail}>
-      <Input type="text"  name="name" id="name" placeholder="Nome" required />
+      <Input type="text" name="name" id="name" placeholder="Nome" required />
       <Input type="text" name="email" id="email" placeholder="Email" required />
-      <Input type="text" name="phone" id="phone" placeholder="Telefone" required />
+      <Input
+        type="text"
+        name="phone"
+        id="phone"
+        placeholder="Telefone"
+        required
+      />
+      <Select name="service">
+        <SelectTrigger>
+          <SelectValue placeholder="Serviço" />
+        </SelectTrigger>
+        <SelectContent>
+          <SelectItem value="Higienização Veicular">Higienização Veicular</SelectItem>
+          <SelectItem value="Impermeabilização">Impermeabilização</SelectItem>
+          <SelectItem value="Higienização Completa">Higienização Completa</SelectItem>
+        </SelectContent>
+      </Select>
+
       <Textarea name="message" id="message" placeholder="Mensagem" required />
       <Button disabled={loading} className="w-full" type="submit">
         Enviar
       </Button>
       {error && (
-        <p className="text-red-500">
+        <p className="bg-red-500 text-sm text-white py-2  ">
           Ocorreu um erro ao enviar a mensagem, tente novamente mais tarde.
         </p>
       )}
       {success && (
-        <p className="text-white py-2 font-medium text-center bg-apple-700">
+        <p className="text-white py-2 text-sm text-center bg-apple-700">
           Mensagem enviada com sucesso!
         </p>
       )}
