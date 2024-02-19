@@ -36,13 +36,13 @@ export const Navbar = () => {
     <nav ref={navbarRef} className="bg-white sticky top-0 z-10">
       <div className="max-w-screen-xl w-full mx-auto py-5 px-8 relative">
         <div className="flex justify-between items-center">
-          {/* TODO: add mobile version for image */}
           <Image
             src="/logo.png"
             alt="Logo"
             width={170}
             height={150}
-            className="w-28 md:w-48"
+            className="w-28 md:w-48 hover:cursor-pointer"
+            onClick={() => scrollToSection("início")}
           />
 
           <ul className="gap-8 text-st-tropaz-950 hidden md:flex">

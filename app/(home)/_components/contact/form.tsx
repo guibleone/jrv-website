@@ -65,6 +65,7 @@ export const Form: React.FC = () => {
           <SelectItem value="Higienização Veicular">Higienização Veicular</SelectItem>
           <SelectItem value="Impermeabilização">Impermeabilização</SelectItem>
           <SelectItem value="Higienização Completa">Higienização Completa</SelectItem>
+          <SelectItem value="Limpeza de Tapetes">Limpeza de Tapetes</SelectItem>
         </SelectContent>
       </Select>
 

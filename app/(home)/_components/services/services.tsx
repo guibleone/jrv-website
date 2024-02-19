@@ -1,5 +1,15 @@
+"use client";
 import { Separator } from "@/components/ui/separator";
+import Autoplay from "embla-carousel-autoplay";
 import { ServiceCard } from "./service-card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import React from "react";
 
 const services = [
   {
@@ -23,6 +33,13 @@ const services = [
     image: "/higienização.jpeg",
     link: "contato",
   },
+  {
+    title: "Limpeza de Tapetes",
+    description:
+      "A limpeza de tapetes é realizada com produtos específicos para cada tipo de fibra, garantindo a remoção de manchas e sujeiras, além de eliminar ácaros e bactérias.",
+    image: "/limpeza-tapetes.jpeg",
+    link: "contato",
+  },
 ];
 
 export const Services = () => {
@@ -37,11 +54,27 @@ export const Services = () => {
         </h1>
         <Separator className="bg-st-tropaz-950 w-[180px]" />
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-10 gap-10 w-full">
-        {services.map((service, index) => (
-          <ServiceCard key={index} {...service} />
-        ))}
-      </div>
+
+      <Carousel
+        opts={{
+          align: "start",
+          loop: true,
+        }}
+        className="w-full mt-10"
+        plugins={[
+          Autoplay({
+            delay: 2000,
+          }),
+        ]}
+      >
+        <CarouselContent>
+          {services.map((service, index) => (
+            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+              <ServiceCard {...service} />
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
     </section>
   );
 };
