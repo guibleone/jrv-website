@@ -6,7 +6,6 @@ import { Home, Phone, Users } from "lucide-react";
 import { ImImages } from "react-icons/im";
 import { GiVacuumCleaner } from "react-icons/gi";
 import { useRef } from "react";
-import { usePathname } from "next/navigation";
 
 const links = [
   { name: "Início", href: "início" },
@@ -17,7 +16,6 @@ const links = [
 ];
 
 export const Navbar = () => {
-  const pathname = usePathname();
   const navbarRef = useRef<HTMLDivElement>(null);
 
   const scrollToSection = (sectionId: string) => {
@@ -59,10 +57,7 @@ export const Navbar = () => {
           <Button asChild className="hidden sm:block">
             <a href="https://wa.me/5519993509241">Agendar</a>
           </Button>
-
-          {/* TODO: add drawer */}
         </div>
-
         <Drawer>
           <div className="flex flex-col gap-5">
             <h1 className="text-gray-900 font-bold text-lg">Menu</h1>
