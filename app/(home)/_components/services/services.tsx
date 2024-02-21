@@ -22,7 +22,7 @@ const services = [
   {
     title: "Impermeabilização",
     description:
-      "A impermeabilização aplicao uma camada protetora que atua nas fibras dos tecidos, aumentando sua durabilidade e resistência contra líquidos, reduzindo a acumulação de sujeira.",
+      "A impermeabilização aplica uma camada protetora que atua nas fibras dos tecidos, aumentando sua durabilidade e resistência contra líquidos, reduzindo a acumulação de sujeira.",
     image: "/impermeabilização.jpeg",
     link: "contato",
   },
