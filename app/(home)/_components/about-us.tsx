@@ -11,7 +11,7 @@ export const AboutUs = () => {
             <Separator className=" bg-st-tropaz-950 w-[180px]" />
             <p className="text-st-tropaz-400 text-sm md:text-base font-normal">
               No coração da JVR, somos mais do que uma equipe de especialistas
-              em limpeza de sofás - somos apaixonados por transformar espaços e
+              em limpeza de estofados - somos apaixonados por transformar espaços e
               proporcionar conforto aos nossos clientes. Combinando habilidade
               artesanal com tecnologia de ponta, dedicamo-nos a revitalizar
               estofados, trazendo de volta o brilho e a frescura que merecem.

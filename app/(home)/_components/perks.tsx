@@ -34,7 +34,7 @@ export const Perks = () => {
           <Perk
             Icon={BadgeDollarSign}
             title="Preços Imbatíveis"
-            description="Nossos serviços de limpeza de sofás oferecem preços irresistíveis, sem comprometer a qualidade."
+            description="Nossos serviços de limpeza de estofados oferecem preços irresistíveis, sem comprometer a qualidade."
           />
         </div>
       </div>

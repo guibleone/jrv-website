@@ -23,10 +23,10 @@ export const Hero = () => {
         <div className=" max-w-md mr-auto w-full  flex flex-col gap-10 items-center text-center sm:items-start sm:text-start">
           <div className="flex flex-col gap-3">
             <h1 className="text-2xl sm:text-4xl text-st-tropaz-700 font-bold">
-              Recupere o Brilho e o Conforto do Seu Sofá
+              Recupere o Brilho e o Conforto do Seu Estofado
             </h1>
             <p className="text-st-tropaz-400 font-normal text-sm md:text-base">
-              Bem-vindo a JVR, onde a limpeza do seu sofá é mais do que uma
+              Bem-vindo a JVR, onde a limpeza do seu estofado é mais do que uma
               tarefa - é uma arte!
             </p>
           </div>

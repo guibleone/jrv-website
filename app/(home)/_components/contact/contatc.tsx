@@ -14,7 +14,7 @@ export const Contact = () => {
         </h1>
         <Separator className="bg-st-tropaz-950 w-[180px]" />
         <p className="text-sm text-center mt-5">
-        Solicite já seu orçamento grátis e tenha seu sofá limpo e renovado ainda hoje!
+        Solicite já seu orçamento grátis e tenha seu estofado limpo e renovado ainda hoje!
         </p>
 
       </div>
