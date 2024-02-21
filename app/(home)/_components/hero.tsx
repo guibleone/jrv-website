@@ -20,7 +20,7 @@ export const Hero = () => {
   return (
     <section className="max-w-screen-xl w-full mx-auto py-10 sm:py-20 px-8">
       <div className="flex flex-col md:flex-row items-center gap-10">
-        <div className=" max-w-md mr-auto w-full  flex flex-col gap-10 items-center text-center sm:items-start sm:text-start">
+        <div className=" max-w-[500px] mr-auto w-full  flex flex-col gap-10 items-center text-center sm:items-start sm:text-start">
           <div className="flex flex-col gap-3">
             <h1 className="text-2xl sm:text-4xl text-st-tropaz-700 font-bold">
               Recupere o Brilho e o Conforto do Seu Estofado
