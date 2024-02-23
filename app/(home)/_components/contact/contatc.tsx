@@ -10,7 +10,7 @@ export const Contact = () => {
     >
       <div className="flex justify-center flex-col items-center gap-2">
         <h1 className="text-xl md:text-2xl font-bold text-st-tropaz-950  text-center">
-          Contato
+          Orçamento
         </h1>
         <Separator className="bg-st-tropaz-950 w-[180px]" />
         <p className="text-sm text-center mt-5">

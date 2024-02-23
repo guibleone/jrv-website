@@ -17,7 +17,7 @@ const links = [
 
 export const Footer = () => {
   const matches = useMediaQuery("(max-width: 768px)");
-  
+
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -47,7 +47,7 @@ export const Footer = () => {
               <a href="https://www.instagram.com/jvr_higienizacao">
                 <FaInstagram size={20} />
               </a>
-              <a href="https://wa.me/5519993509241">
+              <a href="https://wa.me/5519995789766">
                 <FaWhatsapp size={20} />
               </a>
               <a href="https://www.facebook.com/profile.php?id=100089071991486&mibextid=LQQJ4d">
@@ -74,22 +74,31 @@ export const Footer = () => {
               <h1 className="text-base sm:text-xl font-bold">Contato</h1>
               <div className="flex items-center gap-2">
                 <MapPin size={20} />
-                  <p className="text-sm hover:cursor-pointer">
-                    Campinas e região
-                  </p>
+                <p className="text-sm hover:cursor-pointer">
+                  Campinas e região
+                </p>
               </div>
               <div className="flex items-center gap-2">
                 <Phone size={20} />
-                <a href="tel:+5519993509241">
-                  <p className="text-sm hover:cursor-pointer">
-                  +55 19 99350-9241
-                  </p>
-                </a>
+                <div className="flex flex-col gap-2">
+                  <a href="tel:+5519993509241">
+                    <p className="text-sm hover:cursor-pointer">
+                      +55 19 99350-9241
+                    </p>
+                  </a>
+                  <a href="tel:+5519974083193">
+                    <p className="text-sm hover:cursor-pointer">
+                      +55 19 97408-3193
+                    </p>
+                  </a>
+                </div>
               </div>
               <div className="flex items-center gap-2">
                 <Mail size={20} />
                 <a href="mailto:jvrhigienizacoes@gmail.com">
-                  <p className="text-sm hover:cursor-pointer">jvrhigienizacoes@gmail.com</p>
+                  <p className="text-sm hover:cursor-pointer">
+                    jvrhigienizacoes@gmail.com
+                  </p>
                 </a>
               </div>
             </div>

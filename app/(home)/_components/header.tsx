@@ -68,7 +68,7 @@ useEffect(() => {
           </div>
         </div>
         <div className="flex gap-3">
-          <a href="https://wa.me/5519993509241">
+        <a href="https://wa.me/5519995789766">
             <FaWhatsapp size={20} />
           </a>
           <a href="https://www.instagram.com/jvr_higienizacao">

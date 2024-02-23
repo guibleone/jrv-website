@@ -69,7 +69,7 @@ export const Form: React.FC = () => {
         </SelectContent>
       </Select>
 
-      <Textarea name="message" id="message" placeholder="Mensagem" required />
+      <Textarea name="message" id="message" placeholder="Menssagem" required />
       <Button disabled={loading} className="w-full" type="submit">
         Enviar
       </Button>

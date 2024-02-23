@@ -55,7 +55,7 @@ export const Navbar = () => {
             ))}
           </ul>
           <Button asChild className="hidden sm:block">
-            <a href="https://wa.me/5519993509241">Agendar</a>
+            <a href="https://wa.me/5519995789766">Agendar</a>
           </Button>
         </div>
         <Drawer>
