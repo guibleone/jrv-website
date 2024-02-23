@@ -107,6 +107,10 @@ export const Navbar = () => {
                   Contato
                 </span>
               </div>
+
+              <Button asChild className="block text-center">
+                <a href="https://wa.me/5519995789766">Agendar</a>
+              </Button>
             </div>
           </div>
         </Drawer>
