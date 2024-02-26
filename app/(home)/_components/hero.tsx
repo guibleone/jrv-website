@@ -38,7 +38,7 @@ export const Hero = () => {
               Saiba Mais
             </Button>
             <Button
-              onClick={() => scrollToSection("contato")}
+              onClick={() => scrollToSection("orçamento")}
               variant={"default"}
             >
               Orçamento

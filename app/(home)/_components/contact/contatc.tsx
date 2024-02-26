@@ -5,7 +5,7 @@ import { AtSign, Mail, PhoneIcon } from "lucide-react";
 export const Contact = () => {
   return (
     <section
-      id="contato"
+      id="orçamento"
       className="max-w-screen-md mx-auto w-full px-8 py-10 sm:py-20"
     >
       <div className="flex justify-center flex-col items-center gap-2">

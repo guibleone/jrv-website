@@ -12,7 +12,7 @@ const links = [
   { name: "Sobre Nós", href: "sobre-nós" },
   { name: "Serviços", href: "serviços" },
   { name: "Galeria", href: "galeria" },
-  { name: "Contato", href: "contato" },
+  { name: "Orçamento", href: "orçamento" },
 ];
 
 export const Footer = () => {

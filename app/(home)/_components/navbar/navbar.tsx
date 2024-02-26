@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Drawer from "./drawer";
 import { Button } from "@/components/ui/button";
-import { Home, Phone, Users } from "lucide-react";
+import { Home, PencilIcon, Phone, Users } from "lucide-react";
 import { ImImages } from "react-icons/im";
 import { GiVacuumCleaner } from "react-icons/gi";
 import { useRef } from "react";
@@ -12,7 +12,7 @@ const links = [
   { name: "Sobre Nós", href: "sobre-nós" },
   { name: "Serviços", href: "serviços" },
   { name: "Galeria", href: "galeria" },
-  { name: "Contato", href: "contato" },
+  { name: "Orçamento", href: "orçamento" },
 ];
 
 export const Navbar = () => {
@@ -100,11 +100,11 @@ export const Navbar = () => {
               </div>
               <div
                 className="border-b flex gap-2 items-center font-medium border-gray-900 pb-2"
-                onClick={() => scrollToSection("contato")}
+                onClick={() => scrollToSection("orçamento")}
               >
-                <Phone size={20} />
+                <PencilIcon size={20} />
                 <span className="text-gray-900 text-sm hover:text-gray-400">
-                  Contato
+                  Orçamento
                 </span>
               </div>
 
