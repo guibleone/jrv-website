@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 
 const variants = {
   initial: { x: "100%" },
-  animate: { x: "-190%", transition: { duration: 10, repeat: Infinity, ease:'linear' } },
+  animate: { x: "-230%", transition: { duration: 10, repeat: Infinity, ease:'linear' } },
 };
 
 export const Header = () => {
