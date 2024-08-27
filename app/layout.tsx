@@ -1,4 +1,5 @@
 import { Analytics } from "@vercel/analytics/react";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
@@ -21,7 +22,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <GoogleTagManager gtmId="AW-16683064677" />
       <body className={poppins.className}>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=AW-16683064677"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
         {children}
         <Analytics />
       </body>
