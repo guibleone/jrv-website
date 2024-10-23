@@ -1,7 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import Link from "next/link";
 import { useMediaQuery } from "usehooks-ts";
 
 interface ServiceCardProps {
@@ -41,11 +40,11 @@ export const ServiceCard = ({
         className="aspect-video object-cover rounded-lg w-full"
       />
       <h1 className="text-xl font-semibold text-st-tropaz-700">{title}</h1>
-      <p className="text-sm  text-st-tropaz-400">{description}</p>
+      <p className="text-sm text-st-tropaz-400">{description}</p>
       <Button
         size={"sm"}
-        onClick={() => scrollToSection(link)}
         className="self-end"
+        onClick={() => window.open(link, "_blank")}
       >
         Contratar
       </Button>

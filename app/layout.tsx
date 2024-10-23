@@ -22,11 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <GoogleTagManager gtmId="AW-16683064677" />
+      <GoogleTagManager gtmId="GTM-NFLJD44T" />
       <body className={poppins.className}>
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=AW-16683064677"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-NFLJD44T"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}

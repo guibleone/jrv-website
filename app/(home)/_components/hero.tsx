@@ -1,5 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 import { useMediaQuery } from "usehooks-ts";
 
@@ -25,23 +26,38 @@ export const Hero = () => {
             <h1 className="text-2xl sm:text-4xl text-st-tropaz-700 font-bold">
               Recupere o Brilho e o Conforto do Seu Estofado
             </h1>
-            <p className="text-st-tropaz-400 font-normal text-sm md:text-base">
-              Bem-vindo a JVR, onde a limpeza do seu estofado é mais do que uma
-              tarefa - é uma arte!
+            <p className="text-st-tropaz-400 font-normal text-sm md:text-base space-y-4">
+              Dê mais brilho, conforto e saúde ao seu lar com nossa
+              higienização! Eliminamos até
+              <span className="text-red-500 font-bold"> 99,9%</span>{" "}
+              dos agentes que causam alergias, como
+              <span className="text-st-tropaz-700 font-bold"> ácaros, bactérias e fungos
+              </span>.
             </p>
+            <p className="text-st-tropaz-400 font-normal text-sm md:text-base space-y-4">
+              Além disso, removemos até
+              <span className="text-red-500 font-bold"> 99%</span> das
+              <span className="text-st-tropaz-700 font-bold"> manchas e odores
+              </span>{" "}
+              persistentes, como urina de pets e crianças.
+            </p>
+            {/* <p className="text-st-tropaz-400 font-normal text-sm md:text-base space-y-4">
+              Usando{" "}
+              <span className="text-st-tropaz-700 font-bold">
+                equipamentos profissionais
+              </span>{" "}
+              de alta performance, garantimos seu estofado seco em
+              <span className="text-green-500 font-bold"> poucas horas</span>,
+              pronto para ser usado com segurança, conforto e aquele cheirinho
+              de limpeza!
+            </p> */}
           </div>
           <div className="flex gap-3">
-            <Button
-              onClick={() => scrollToSection("serviços")}
-              variant={"outline"}
-            >
-              Saiba Mais
-            </Button>
             <Button
               onClick={() => scrollToSection("orçamento")}
               variant={"default"}
             >
-              Orçamento
+              Solicitar um Orçamento
             </Button>
           </div>
         </div>

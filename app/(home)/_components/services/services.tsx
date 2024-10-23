@@ -6,39 +6,41 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 import React from "react";
 
 const services = [
   {
-    title: "Higienização Veicular ",
+    title: "Higienização Veicular",
     description:
       "Limpeza completa de bancos, vidros e teto, hidratação e revitalização de plásticos, higienização de carpetes e porta-malas, além de uma lavagem externa com pneu pretinho.",
     image: "/limpeza-carro.jpeg",
-    link: "orçamento",
+    link:
+      "https://wa.me/5519995789766?text=Ol%C3%A1,%20vim%20do%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20higieniza%C3%A7%C3%A3o%20veicular",
   },
   {
     title: "Impermeabilização",
     description:
       "A impermeabilização aplica uma camada protetora que atua nas fibras dos tecidos, aumentando sua durabilidade e resistência contra líquidos, reduzindo a acumulação de sujeira.",
     image: "/impermeabilização.jpeg",
-    link: "orçamento",
+    link:
+      "https://wa.me/5519995789766?text=Ol%C3%A1,%20vim%20do%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20impermeabiliza%C3%A7%C3%A3o",
   },
   {
     title: "Higienização Completa",
     description:
-      "A higienização e limpeza de estofados envolve a eliminação de bactérias. Esse processo é realizado utilizando produtos biodegradáveis, seguido pela remoção da sujeira através da extração",
+      "A higienização e limpeza de estofados envolve a eliminação de bactérias. Esse processo é realizado utilizando produtos biodegradáveis, seguido pela remoção da sujeira através da extração.",
     image: "/higienização.jpeg",
-    link: "orçamento",
+    link:
+      "https://wa.me/5519995789766?text=Ol%C3%A1,%20vim%20do%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20higieniza%C3%A7%C3%A3o%20completa",
   },
   {
     title: "Limpeza de Tapetes",
     description:
       "A limpeza de tapetes é realizada com produtos específicos para cada tipo de fibra, garantindo a remoção de manchas e sujeiras, além de eliminar ácaros e bactérias.",
     image: "/limpeza-tapetes.jpeg",
-    link: "orçamento",
+    link:
+      "https://wa.me/5519995789766?text=Ol%C3%A1,%20vim%20do%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20limpeza%20de%20tapetes",
   },
 ];
 
