@@ -1,23 +1,9 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
-import { useMediaQuery } from "usehooks-ts";
+import { FaWhatsapp } from "react-icons/fa";
 
 export const Hero = () => {
-  const matches = useMediaQuery("(max-width: 768px)");
-
-  const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      const navbarHeight = matches ? 60 : 108;
-      const sectionPosition = section.offsetTop - navbarHeight;
-      window.scrollTo({
-        top: sectionPosition,
-        behavior: "smooth",
-      });
-    }
-  };
   return (
     <section className="max-w-screen-xl w-full mx-auto py-10 sm:py-20 px-8">
       <div className="flex flex-col md:flex-row items-center gap-10">
@@ -29,19 +15,22 @@ export const Hero = () => {
             <p className="text-st-tropaz-400 font-normal text-sm md:text-base space-y-4">
               Dê mais brilho, conforto e saúde ao seu lar com nossa
               higienização! Eliminamos até
-              <span className="text-red-500 font-bold"> 99,9%</span>{" "}
+              <span className="text-red-500 font-bold text-lg"> 99,9%</span>{" "}
               dos agentes que causam alergias, como
-              <span className="text-st-tropaz-700 font-bold"> ácaros, bactérias e fungos
+              <span className="text-st-tropaz-700 text-lg font-bold">
+                {" "}ácaros, bactérias e fungos
               </span>.
             </p>
             <p className="text-st-tropaz-400 font-normal text-sm md:text-base space-y-4">
               Além disso, removemos até
-              <span className="text-red-500 font-bold"> 99%</span> das
-              <span className="text-st-tropaz-700 font-bold"> manchas e odores
+              <span className="text-red-500 font-bold text-lg"> 99%</span> das
+              <span className="text-st-tropaz-700 font-bold text-lg">
+                {" "}manchas e odores
               </span>{" "}
               persistentes, como urina de pets e crianças.
             </p>
-            {/* <p className="text-st-tropaz-400 font-normal text-sm md:text-base space-y-4">
+            {
+              /* <p className="text-st-tropaz-400 font-normal text-sm md:text-base space-y-4">
               Usando{" "}
               <span className="text-st-tropaz-700 font-bold">
                 equipamentos profissionais
@@ -50,14 +39,20 @@ export const Hero = () => {
               <span className="text-green-500 font-bold"> poucas horas</span>,
               pronto para ser usado com segurança, conforto e aquele cheirinho
               de limpeza!
-            </p> */}
+            </p> */
+            }
           </div>
           <div className="flex gap-3">
             <Button
-              onClick={() => scrollToSection("orçamento")}
-              variant={"default"}
+              className="bg-green-500"
+              onClick={() =>
+                window.open(
+                  "https://wa.me/5519995789766?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento.",
+                  "_blank",
+                )}
             >
-              Solicitar um Orçamento
+              <FaWhatsapp size={25} className="mr-5" />
+              Solicitar Orçamento
             </Button>
           </div>
         </div>

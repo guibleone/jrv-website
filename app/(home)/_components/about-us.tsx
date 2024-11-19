@@ -19,7 +19,7 @@ export const AboutUs = () => {
           </div>
           <div>
             <Image
-              className="rounded-[30px]"
+              className="rounded-[15px]"
               src="/about-us.jpeg"
               width={200}
               height={230}
