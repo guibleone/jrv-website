@@ -1,5 +1,5 @@
 import { Analytics } from "@vercel/analytics/react";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
@@ -22,11 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <GoogleTagManager gtmId="GTM-NFLJD44T" />
       <body className={poppins.className}>
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-NFLJD44T"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-KX9CGKZV"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
@@ -35,6 +34,7 @@ export default function RootLayout({
         {children}
         <Analytics />
       </body>
+      <GoogleAnalytics gaId="GTM-KX9CGKZV" />
     </html>
   );
 }
